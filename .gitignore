@@ -1,0 +1,25 @@
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.tmp
+
+# Segredos e ambiente (nunca versionar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Obsidian (cofre em docs/) - apenas estado local do aplicativo
+docs/.obsidian/workspace.json
+docs/.obsidian/workspace-mobile.json
+docs/.obsidian/cache
+docs/.obsidian/plugins/*/data.json
+
+# Godot 4 (somente quando o projeto existir em game/)
+game/.godot/
+game/.import/
+game/export/
+game/*.transient/
