@@ -22,7 +22,7 @@ fonte: Contexto Geral do Jogo.md
 - Combate e câmera detalhados; combate/escopo da primeira versão.
 - Como o item "Diferente" é único: global em todas as runs, por save ou por campanha?
 - Regras de geração procedural e escolhas persistentes.
-- Engine proposta (Godot 4/GDScript/Compatibility) ainda precisa de validação com prova de conceito web.
+- Engine aprovada: **Bevy 0.20 + Rust stable** (ver [[ADR-001-Engine]]); validação WASM/WebGL2 pendente.
 
 ## Conexões
 [[Roadmap]] · [[Backlog-Sprint-0]] · [[ADR-001-Engine]]

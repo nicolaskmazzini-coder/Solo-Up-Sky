@@ -1,11 +1,11 @@
 # Solo Up Sky
 
-Jogo 2D de fantasia brutal em pixel art, em fase de fundação (documentação, regras e agentes). Nome aprovado pelo Diretor em 2026-10-25 — ver [[ADR-003-Identidade-do-Projeto]].
+Jogo 2D de fantasia brutal em pixel art, em fase de fundação. Nome aprovado pelo Diretor em 2026-10-25 ([[ADR-003-Identidade-do-Projeto]]). **Engine aprovada: Bevy 0.20.0 + Rust stable** ([[ADR-001-Engine]]; migração do kit registrada em [[ADR-004-Migracao-Kit-Bevy]]); alvo WASM via `wasm32-unknown-unknown` e WebGL2.
 
 ## Kit inicial de agentes OpenCode + Obsidian
 
 ## O que foi entregue
-8 agentes (`.opencode/agents/*.md`), `AGENTS.md`, cofre Obsidian em `docs/`, 6 prompts de operação em `prompts/`.
+8 agentes (`.opencode/agents/*.md`) reescritos para Bevy/Rust, `AGENTS.md` reescrito em merge, cofre Obsidian em `docs/`, 8 prompts de operação em `prompts/` (inclui 06-Configurar-Modelos e 07-Validar-WebAssembly).
 
 ## Instalar
 1. Crie/abra um repositório Git local do jogo; faça backup de arquivos existentes.
@@ -31,14 +31,15 @@ Jogo 2D de fantasia brutal em pixel art, em fase de fundação (documentação, 
 
 `default_agent` está definido como `coordenador` em `.opencode/opencode.json`. `Beam Free` e `Big Pickle` ficam para benchmarks. Modelos gratuitos podem ter limites ou mudar de disponibilidade; não presumir capacidades sem teste. Os prompts atualmente bloqueiam o QA de editar, e exigem confirmação para alterações de gameplay.
 
-## Atenção: versão do OpenCode
-Este kit usa formato Markdown **legado/documentado em opencode.ai/docs/agents** com `permission:` e `mode:`. Se você usar uma variante do OpenCode que espera o formato V2 com `permissions:` (lista), adapte o frontmatter conforme documentação da versão instalada. A compatibilidade exata exige validação local.
+## Formato dos agentes
+Os arquivos usam o formato nativo do OpenCode 2: frontmatter com `permissions:` (lista `action/resource/effect`) e `model:` por agente. Rodando no OpenCode 1, ajuste à sintaxe legada antes de usar; confira com `opencode --version` e `opencode debug agents`.
 
 ## Regras
 - Documentos em `docs/` são propostas até o diretor aprová-los.
 - Primeira execução é apenas análise/planejamento.
 - Nunca fornecer aprovação humana automaticamente.
 - Os dois arquivos originais enviados pelo usuário não foram modificados e devem ser guardados como fonte na pasta de referências.
+- Game engine proibida: Godot. Stack aprovada: Bevy 0.20 + Rust; `Cargo.lock` versionado; validações `cargo fmt/check/clippy/test` e smoke test WASM antes de declarar pronto.
 
 ## Referência
-Documentação oficial: https://opencode.ai/docs/agents
+Documentação oficial: https://opencode.ai/v2/docs/agents · Bevy 0.20: https://bevy.org/news/bevy-0-20/ · Avian2D: https://docs.rs/crate/avian2d/0.8.0

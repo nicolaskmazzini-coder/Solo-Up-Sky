@@ -22,7 +22,7 @@ relacionados: ["ADR-001", "ADR-002", "Visao-do-Jogo"]
 ## Fora de escopo desta decisão
 - Quais raças/atributos estarão disponíveis no modo personalizado, orçamento de pontos e limites de criação: depende do desenho de progressão (game-designer) e de aprovação posterior.
 - Identidade visual, logotipo e tipografia.
-- Engine (permanece em [[ADR-001-Engine]], `proposta`).
+- Engine aprovada pelo Diretor: Bevy 0.20 + Rust ([[ADR-004-Migracao-Kit-Bevy]]); validação web pendente ([[ADR-001-Engine]]).
 
 ## Evidências
 - `Rename-Item Docs → docs` executado; `Get-ChildItem -Directory` lista `docs`.

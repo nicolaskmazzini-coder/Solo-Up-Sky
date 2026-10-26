@@ -1,3 +1,3 @@
-# Prompt — Revisão independente
+# Prompt operacional
 
-@qa Revise a tarefa [GAME-XXX] e o diff respectivo. Compare cada critério de aceite com evidências concretas. Separe TESTADO, INSPECIONADO e NÃO TESTADO; liste bugs por gravidade, comandos realmente executados, impactos web/portable e pendências. Não edite o código. Finalize como APTO PARA AVALIAÇÃO HUMANA ou REPROVADO NA REVISÃO — jamais APROVADO PELO DIRETOR.
+@qa Verifique trabalho da sprint aprovada: diffs, fmt/check/clippy/test, WASM e browser smoke quando disponíveis. Faça relatório P0-P3 com evidência, sem alterações de arquivos. @coordenador consolide aceite para decisão do diretor.

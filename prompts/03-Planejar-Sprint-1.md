@@ -1,3 +1,3 @@
-# Prompt — Planejar primeiro protótipo
+# Prompt operacional
 
-@coordenador Considerando somente ADRs aprovadas, proponha a Sprint 1: movimento lateral, salto, colisão, câmera e prova de conceito de exportação web. Faça @gameplay sugerir estrutura e @arquiteto revisar, com @qa definindo testes. Não escreva código. Traga dependências, critérios de aceite, alvos de performance a definir por mim, riscos e mudanças que precisam da minha autorização.
+@coordenador Proponha Sprint 1 para vertical slice Bevy: personagem placeholder, movimento lateral, pulo, câmera, chão e colisão, gamepad/teclado a definir. Não inclua inventário, dez raças, história ou boss. Delegue revisão arquiteto e QA. Espere autorização.

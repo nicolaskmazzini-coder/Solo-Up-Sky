@@ -1,10 +1,9 @@
-# game/ — área de código do jogo
+# game/ — Crate Rust do jogo
 
-Pasta reservada para o projeto do jogo. **Ainda vazia de propósito.**
+Pasta reservada para o projeto Bevy. **Ainda vazia de propósito.**
 
-- Nenhuma engine foi aprovada: [[ADR-001-Engine]] está `proposta` e exige prova de conceito exportada para web.
-- Nada de código deve ser criado aqui antes da aprovação da ADR-001 e da Sprint 1.
-- A estrutura de pastas/cenas será definida em conjunto com [[Roadmap]] e o backlog aprovado.
-
-> Ao criar o projeto Godot (se aprovado), o arquivo `project.godot` nasce na raiz desta pasta e os artefatos
-> gerados (`.godot/`, `.import/`, `export/`) já estão no `.gitignore` da raiz.
+- Engine aprovada: **Bevy 0.20.0 + Rust stable** (ver [[ADR-001-Engine]]; migração registrada em [[ADR-004-Migracao-Kit-Bevy]]).
+- Nada de código ou `Cargo.toml` até o Diretor aprovar a tarefa GAME-003 do [[Backlog-Sprint-0]].
+- O arquivo `Cargo.toml` nascerá na raiz desta pasta; `Cargo.lock` é **versionado** (builds reproducíveis).
+- `target/` e `dist/` são ignorados pelo `.gitignore` da raiz.
+- Antes de declarar pronto: `cargo fmt --check`, `cargo check`, `cargo clippy -D warnings`, `cargo test` e smoke test em navegador com `wasm32-unknown-unknown` + WebGL2 (ver [[Plano-de-Testes-Inicial]]).

@@ -2,13 +2,13 @@
 tipo: roadmap
 status: proposta
 ---
-# Roadmap
-0. Fundação: agentes, documentação, regras, arquitetura proposta, backlog.
-1. Vertical slice de movimentação: personagem, câmera, colisão e exportação web.
-2. Combate básico: ataque, dano, inimigo e feedback.
-3. Run curta: salas, seleção/geração procedural, reinício de run.
-4. Progressão mínima: skills, nível e um item por qualidade somente após validação.
-5. Escolhas narrativas e modo história mínimo.
-6. Refinamento de arte, VFX, som e otimização.
-
-> Cada etapa pode conter múltiplas sprints. Não iniciar sem aprovação; não presumir prazos.
+# Roadmap (proposta sujeita a aprovação)
+0. Fundação: repo, agentes, Obsidian, ADR, compilação nativa e WASM.
+1. Vertical slice: movimento, câmera, colisão e arena.
+2. Combate: hitboxes, dano, 1 inimigo, feedback e respawn.
+3. Uma run reproduzível: salas, seed, escolhas simples.
+4. Progressão: level, skills e itens.
+5. Conteúdo: bioma, mini-boss, arte e áudio.
+6. Narrativa: decisões, rotas e personagens.
+7. Distribuição: otimização Web, acessibilidade, testes e packaging.
+Não entregar todos os sistemas de uma só vez.

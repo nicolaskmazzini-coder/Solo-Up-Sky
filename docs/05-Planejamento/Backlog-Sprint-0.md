@@ -3,16 +3,15 @@ tipo: sprint
 id: SPRINT-0
 status: aguardando-aprovacao
 ---
-# Sprint 0 — Fundação
+# Backlog Sprint 0
+- [ ] GAME-001 Validar ambiente `rustc --version`, `cargo --version`, `opencode --version`; registrar outputs.
+- [ ] GAME-002 Inventariar `opencode models` e configurar IDs reais por agente.
+- [ ] GAME-003 Criar projeto Bevy mínimo e renderizar sprite provisório somente após aprovação.
+- [ ] GAME-004 Testar `cargo fmt`, `cargo check`, `cargo clippy`, `cargo test` e WASM target.
+- [ ] GAME-005 Validar browser WebGL2 no hardware-alvo.
+- [ ] GAME-006 Provar colisão básica com Avian2D e controlar compatibilidade.
+- [ ] GAME-007 Registrar resultados e riscos no Obsidian.
+- [ ] GAME-008 Diretor aprova a fundação.
 
-| ID | Responsável | Entrega | Aceite |
-|---|---|---|---|
-| GAME-001 | Coordenador | Mapa de responsabilidades | Validado pelo Diretor |
-| GAME-002 | Arquiteto | ADR-001, riscos web | Alternativas + experimento testável |
-| GAME-003 | Game Designer | Core loop e escopo MVP | Regras claras + lista de exclusões |
-| GAME-004 | Narrativa | Inventário de lore canônico e lacunas | Nenhuma invenção apresentada como fato |
-| GAME-005 | Arte | Guia inicial de pixels e legibilidade | Parâmetros para protótipo, sem assets copiados |
-| GAME-006 | Documentador | Índices, templates e links Obsidian | Todas as notas rastreáveis |
-| GAME-007 | QA | Plano de teste do protótipo web | Casos reprodutíveis e critérios objetivos |
-
-Todas as tarefas são planejamento/documentação; implementação do jogo depende de nova autorização.
+## Exit criteria
+Build nativo executado, build WASM e smoke test registrados; screenshots quando possível; nenhuma decisão de lore modificada.

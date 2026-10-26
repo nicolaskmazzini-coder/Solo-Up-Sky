@@ -18,8 +18,6 @@ docs/.obsidian/workspace-mobile.json
 docs/.obsidian/cache
 docs/.obsidian/plugins/*/data.json
 
-# Godot 4 (somente quando o projeto existir em game/)
-game/.godot/
-game/.import/
-game/export/
-game/*.transient/
+# Rust / projeto do jogo em game/
+game/target/
+game/dist/
